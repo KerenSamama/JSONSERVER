@@ -1,0 +1,209 @@
+.postsContainer {
+  margin: 20px;
+}
+
+.editTitle {
+  color: black;
+  font-weight: bold; 
+  font-size: 16px;   
+}
+
+
+.saveButton,
+.cancelButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+.saveButton:hover,
+.cancelButton:hover {
+    background-color: #333;
+}
+
+.saveButton:active,
+.cancelButton:active {
+    transform: scale(0.95);
+}
+
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.userPost {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  border: 2px solid white;
+  z-index: 1005;
+}
+
+.selectedPost {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.createForm input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.createForm input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.buttonCreatePost {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonCreatePost:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.buttonCreatePost:active {
+  background-color: #004080;
+  transform: translateY(0);
+}
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.formContainer label {
+  margin-right: 10px;
+}
+
+.commentContainer {
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.commentGrid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.userComment {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+}
+
+.userComment:last-child {
+  border-bottom: none;
+}
+
+.editForm, .createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.editForm input[type="text"], .createForm input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.editForm input[type="text"]:focus, .createForm input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.createForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createForm input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.buttonAddComment {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonAddComment:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.buttonAddComment:active {
+  background-color: #004080;
+  transform: translateY(0);
+}

@@ -1,0 +1,32 @@
+.photos-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-photo {
+    margin: 10px;
+    flex: 0 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+}
+
+.user-photo img {
+    width: 100%; 
+    height: auto;
+}
+
+.photosGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.user-photo {
+    margin: 10px;
+    width: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.user-photo img {
+    width: 100%;
+    height: auto; 
+}
